@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+	<head>
+		<title>{{ page.title | escape }}</title>
+    <meta name="image" property="og:image" content="assets/cropped-headshot.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script src="src/fadein.js"></script> -->
+	</head>
+	<body>
+    <header>
+
+      <div class="inner-header">
+
+        <div class="header-links">
+          <a class="link" href="mailto:nick.miller00@gmail.com" target="_blank">Contact Me</a>
+          <a class="link" href="{{ '/assets/resume_20181121.pdf' | relative_url }}" target="_blank">Resume</a>
+        </div>
+
+        <nav class="header-icons">
+          <a class="icon header-icon-link" href="https://github.com/NickMiller11" target="_blank">
+            <img class="github" src="{{ '/assets/github.png' | relative_url }}"></img>
+          </a>
+          <a class="icon header-icon-link" href="https://www.linkedin.com/in/nick-miller-1b61a34b" target="_blank">
+            <img class="linkedin" src="{{ '/assets/linkedin.png' | relative_url }}"></img>
+          </a>
+        </nav>
+
+      </div>
+
+    </header>
+
+    <div id="first">
+      <div id="picture">
+        <img src="{{ '/assets/headshot3.png' | relative_url }}" />
+      </div>
+
+      <div id="introduction">
+        <h2 id="greeting">Hi, I'm Nick</h2>
+
+        <p id="intro">I'm a software engineer in Los Angeles.
+          <br/>
+          <br/>
+          I'm a co-creator of <a href="https://nami-serverless.github.io/" target="_blank">Nami</a>, a serverless framework designed to consume webhooks at scale, built using Node.js and AWS services.
+          <br/>
+          <br/>
+          <!-- <a href="#background">More about me.</a> -->
+        </p>
+
+      </div>
+
+      <div id="scroll">
+        <small>scroll</small>
+        <div class="line"></div>
+      </div>
+
+    </div>
+
+    <!-- <section id="nami">
+      <article>
+        <div class="box">
+          <img id="nami-logo" src="assets/nami_logo.png" />
+          <div class="mobile">
+            <img src="https://i.imgur.com/00Yy8JA.gif" />
+          </div>
+          <p class="description">
+            <a href="https://nami-repl.github.io/" target="_blank">Nami</a> is a framework that deploys a pipeline designed to consume waves of webhooks. Built with Node.js, Docker, MongoDB and AWS services, Nami makes use of serverless functions to automatically scale.
+          </p>
+          <br/>
+          <a href="https://nami-repl.com/whitepaper" target="_blank">
+            <button>Read More</button>
+          </a>
+        </div>
+        <div class="app">
+          <img src="https://i.imgur.com/00Yy8JA.gif" />
+        </div>
+      </article>
+    </section> -->
+
+
+
+
+
+
+
+	</body>
+</html>
