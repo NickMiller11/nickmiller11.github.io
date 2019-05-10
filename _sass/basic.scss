@@ -431,18 +431,10 @@ img.full {
 	width: 320px;
 }
 
-img.github {
-	height: 35px;
-}
-
-img.medium {
-	height: 35px;
-	/*padding-top: 10px;*/
-}
-
+img.github,
+img.resume,
 img.linkedin {
 	height: 35px;
-	/*padding-top: 5px;*/
 }
 
 /*#wrapper {
@@ -564,6 +556,13 @@ a.btn-cta-primary, .btn-cta-primary {
     font-family: 'Montserrat', arial, sans-serif;
     padding: 8px 16px;
     font-weight: bold;
+}
+
+footer > p {
+	font-weight: 500;
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1em;
 }
 
 
