@@ -1,39 +1,11 @@
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
-	<head>
-		<title>{{ page.title | escape }}</title>
-    <meta name="image" property="og:image" content="assets/cropped-headshot.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- <script src="src/fadein.js"></script> -->
-	</head>
+
+	{% include head.html %}
+
 	<body>
-    <header>
-
-      <div class="inner-header">
-
-        <div class="header-links">
-
-        </div>
-
-        <nav class="header-icons">
-          <a class="icon header-icon-link" href="https://github.com/NickMiller11" target="_blank">
-            <img class="github" src="{{ '/assets/github.png' | relative_url }}"></img>
-          </a>
-          <a class="icon header-icon-link" href="https://www.linkedin.com/in/nick-miller-1b61a34b" target="_blank">
-            <img class="linkedin" src="{{ '/assets/linkedin.png' | relative_url }}"></img>
-          </a>
-					<a class="icon header-icon-link" href="{{ '/assets/resume_20181121.pdf' | relative_url }}" target="_blank">
-						<img class="resume" src="{{ '/assets/resume.png' | relative_url }}"></img>
-					</a>
-        </nav>
-
-      </div>
-
-    </header>
+		{% include header.html %}
 
     <div id="first">
       <div id="picture">
@@ -62,9 +34,9 @@
     </div>
 
     <!-- <section id="nami">
+			<h2 id="nami-title">Nami Framework</h2><img id="nami-logo" src="assets/nami_logo.png" />
       <article>
         <div class="box">
-          <img id="nami-logo" src="assets/nami_logo.png" />
           <div class="mobile">
             <img src="https://i.imgur.com/00Yy8JA.gif" />
           </div>
