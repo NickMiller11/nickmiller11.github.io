@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html lang="en-US">
 
 	{% include head.html %}
 
@@ -27,36 +27,44 @@
       </div>
 
       <div id="scroll">
-        <small></small>
+        <small>scroll</small>
         <div class="line"></div>
       </div>
 
     </div>
 
-    <!-- <section id="nami">
-			<h2 id="nami-title">Nami Framework</h2><img id="nami-logo" src="assets/nami_logo.png" />
+    <section id="nami">
+			<!-- <h2 id="nami-title">Nami Framework</h2><img id="nami-logo" src="assets/nami_logo.png" /> -->
       <article>
         <div class="box">
           <div class="mobile">
             <img src="https://i.imgur.com/00Yy8JA.gif" />
           </div>
           <p class="description">
-            <a href="https://nami-repl.github.io/" target="_blank">Nami</a> is a framework that deploys a pipeline designed to consume waves of webhooks. Built with Node.js, Docker, MongoDB and AWS services, Nami makes use of serverless functions to automatically scale.
+            <img id="nami-logo" src="{{ '/assets/nami_logo_main_mark_1.png' | relative_url }}" />
+            <img id="nami-name" src="{{ '/assets/nami_logo_name_only.png' | relative_url }}" />
+            <br />
+            Nami is an open-source, serverless framework for consuming webhooks at scale.
+            <br />
+            <br />
+            Built with Node.js, Docker, MongoDB, and AWS services, Nami accomodates bursty webhook traffic by using AWS Lambda functions to automatically scale compute resources.
           </p>
-          <br/>
-          <a href="https://nami-repl.com/whitepaper" target="_blank">
-            <button>Read More</button>
+
+          <a href="https://nami-serverless.github.io/" target="_blank">
+            <button><p>
+              Read More
+            </p></button>
           </a>
         </div>
         <div class="app">
           <img src="https://i.imgur.com/00Yy8JA.gif" />
         </div>
       </article>
-    </section> -->
+    </section>
 
 	</body>
 	<footer>
 		<p>Connect with me</p>
-		<p>hello@nickmiller.io</p>
+		<a id="email" href="mailto:hello@nickmiller.io">hello@nickmiller.io</a>
 	</footer>
 </html>

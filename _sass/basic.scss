@@ -1,101 +1,83 @@
-/* Scale 8pt, 12pt, 18pt, 27pt */
+// Scale 8pt, 12pt, 18pt, 27pt
 
 html {
-	background: #e6e7e7;/*url('cropped-headshot.png') no-repeat top center fixed*/;
-	-webkit-background-size: contain;
-	-moz-background-size: contain;
-	-o-background-size: contain;
-	background-size: contain;
+  background: #e6e7e7; // url('cropped-headshot.png') no-repeat top center fixed*
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
 }
 
 body {
-	font-family: "SF UI Display", Helvetica, Arial, san-serif;
-	font-weight: 200;
-	font-size: 100%;
-	/*margin: 13% 2.5%;*/
+  font-family: "SF UI Display", Helvetica, Arial, san-serif;
+  font-size: 100%;
+  font-weight: 200;
+	// margin: 13% 2.5%;
 }
 
 article {
-	display: flex;
-	align-self: center;
-	width: 80%;
-	/*flex: 1.02;*/
-	/*max-width: 50%;*/
-	margin: 0;
-	padding: 0;
-	/*display: flex;
-  justify-content: center;
-  align-items: center;*/
+  align-self: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 80%;
 }
 
 header {
-	overflow: hidden;
-  width: 100%;
-  height: calc(1rem + 3vw);
-  /*box-sizing: border-box;*/
-  padding: 0px 0px;
-  z-index: 100;
+  background-color: #fff;
   display: flex;
-  /*justify-content: space-between;*/
-  /*position: fixed;*/
-	background-color: #fff;
+  height: calc(1rem + 3vw);
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
 }
 
 header .inner-header {
-	/*right: 50px;*/
-	display: flex;
-	width: 100%;
-	align-items: center;
-	height: 100%;
-	justify-content: space-between;
-	position: relative;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
   padding: 0 8%;
+  position: relative;
+  width: 100%;
 }
 
 header .inner-header a {
   color: #000;
+  display: block;
   font-family: "SF UI Display", Helvetica, Arial, san-serif;
-	font-weight: 200;
-	font-size: 24px;
-	display: block;
-	height: 50%;
+  font-size: 24px;
+  font-weight: 200;
+  height: 50%;
 }
 
 .header-icons {
+  align-items: center;
+  display: flex;
   flex: 0 1 15rem;
+  justify-content: flex-end;
   order: 3;
   padding-top: 10px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 header a.link:hover {
-	color: grey;
+  color: #808080;
 }
 
-nav a.header-icon-link:hover {
+.header-icon-link:hover {
   filter: invert(80%);
 }
 
 .header-icon-link {
-	display: block;
-	margin-left: 1rem;
-	text-transform: bold;
+  display: block;
+  margin-left: 1rem;
+  text-transform: bold;
 }
 
 .header-links {
-	display: flex;
-	order: 1;
-	align-items: center;
-	/*margin-left: -100px;*/
-	/*flex: 0 1 15rem;*/
-}
-
-.header-links .link {
-	margin-right: 2em;
-	font-size: 1.5em;
-	font-weight: bold;
+  align-items: center;
+  display: flex;
+  order: 1;
 }
 
 section {
@@ -120,8 +102,15 @@ section {
 }
 
 #nami button:hover, #projects button:hover {
-	color: #435619 !important;
-	background-color: #fff;
+  background: #fff;
+  color: #33c5ff;
+  border-image: linear-gradient(0.25turn, #5262ff, #60dcc7) 2;
+}
+
+#nami button:hover p {
+  background-image: linear-gradient(0.25turn, #5262ff, #60dcc7);
+  color: transparent;
+  background-clip: text;
 }
 
 #background button:hover {
@@ -129,60 +118,31 @@ section {
 	background-color: #000;
 }
 
-/*section.visible {
-	opacity: 1;
-	transform: translate(0, 0);
-}*/
-
-#first, header {
-  opacity: 0;
-  /*font-size: 21px;*/
-  /*margin-top: 25px;*/
-  /*text-align: center;*/
-
-  -webkit-transition: opacity 1s ease-in;
-     -moz-transition: opacity 1s ease-in;
-      -ms-transition: opacity 1s ease-in;
-       -o-transition: opacity 1s ease-in;
-          transition: opacity 1s ease-in;
-}
-
 #first {
-	opacity: 1;
-}
-
-header {
-	opacity: 1;
-	/*background-color: transparent;*/
-}
-
-#first {
-	padding-top: 50px;
-	margin: auto;
-	max-width: 1000px;
-	margin-bottom: 10%;
+  margin: auto;
+  margin-bottom: 10%;
+  max-width: 1000px;
+  padding-top: 50px;
 }
 
 #scroll {
-	margin-top: 7.5%;
-	margin-left: auto;
-	margin-right: auto;
-	width: 5%;
-	cursor: pointer;
-	font-family: "Roboto Mono", monospace;
-	color: #000;
-	cursor: auto;
+  color: #000;
+  font-family: "Roboto Mono", monospace;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7.5%;
+  width: 5%;
 }
 
 #scroll .line {
-  height: 75px;
-  width: 1px;
-  margin: 10px auto 30px auto;
   background: #000;
+  height: 75px;
+  margin: 10px auto 30px;
+  width: 1px;
 }
 
 small {
-	font-size: 16px;
+  font-size: 16px;
 }
 
 #background {
@@ -205,14 +165,16 @@ small {
 	font-size: 1.75em;
 }
 
+#nami a {
+  text-align: center;
+}
+
 #background a button, #projects a button, #nami a button {
 	cursor: pointer;
-	/*background-color: #f7f7f7;*/
+
 	margin-top: 20px;
-	margin-right: 40px;
 	padding: 16px 32px;
   color: #000;
-  font-weight: 500 !important;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -222,51 +184,58 @@ small {
 
 /* the top of this section is being calculated from the top of it's padding!*/
 #nami {
-	background-color: #ffF;
-	display: flex;
-	/*height: 100vh;*/
-	/*padding-top: 80px;*/
-	font-size: 1.75em;
-	margin: auto;
-	justify-content: center;
-	/*max-width: 1000px;*/
-	/*margin-bottom: 20%;*/
-	/*margin-left: 30%*/;
+  background-color: #fff;
+  display: flex;
+  font-size: 1.75em;
+  justify-content: center;
+  margin: auto;
 }
 
 #nami a button {
-	background-color: #d85030;
-	color: #fff;
-	border: 2px solid #fff;
+  // background-color: #33c5ff;
+  background: linear-gradient(0.25turn, #5262ff, #60dcc7);
+  border: 2px solid #fff;
+  // border-radius: 15px;
+  color: #fff;
+}
+
+#nami a button p {
+  color: #fff;
 }
 
 #nami .box {
-	/*margin-left: 7%;*/
-  /*width: 80%;*/
   flex: 2;
 }
 
+#nami-logo {
+  height: auto;
+  padding-bottom: 20px;
+  margin-top: -25px;
+  width: 18%;
+}
+
+#nami-name {
+  height: auto;
+  width: 70%;
+}
+
 .app {
-	flex: 3;
-  display: flex;
-  justify-content: flex-end;
   align-items: flex-start;
-  margin-top: 4%;
+  display: flex;
+  flex: 2.5;
+  justify-content: flex-end;
+  margin-top: 5%;
 }
 
 .app img {
-	width: 95%;
-	/*max-width: 105%;*/
-	/*margin-top: -45%;*/
-  /*margin-left: -6.5%;*/
-	border-radius: 8px;
+  // border-radius: 8px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+  width: 95%;
 }
 
 #nami .box a {
-	color: #fff;
-	text-decoration: underline;
-	/*font-size: 45px;*/
+  color: #000;
+  text-decoration: underline;
 }
 
 #presentation {
@@ -431,10 +400,10 @@ img.full {
 	width: 320px;
 }
 
-img.github,
-img.resume,
-img.linkedin {
-	height: 35px;
+.github,
+.resume,
+.linkedin {
+  height: 35px;
 }
 
 h2#nami-title {
@@ -444,10 +413,6 @@ h2#nami-title {
 	text-align: center;
 }
 
-img#nami-logo {
-	height: 100px;
-	width: auto;
-}
 /*#wrapper {
 	background-color: rgba(247, 247, 247, 0.5);
 	padding: 16pt;
@@ -479,10 +444,10 @@ a, a:hover, a:visited, a:active {
 
 #nami p, #projects p {
 	margin: 0;
-	color: #ffa466;
+	color: #000;
 }
 
-#nami-logo, #lander-logo {
+#lander-logo {
 	height: auto;
 	/*width: 700px;*/
 	/*max-width: 800px;*/
@@ -531,7 +496,7 @@ h2 {
  }
 
 .description {
-	font-size: 0.85em;
+	font-size: 0.80em;
 	font-weight: 200;
 }
 
@@ -541,14 +506,6 @@ h2 {
 
 #intro a {
 	text-decoration: underline;
-}
-
-li#contact, li#resume {
-	vertical-align: 50%;
-}
-
-li#contact:hover, li#resume:hover {
-	background-color: none;
 }
 
 a.btn-cta-primary, .btn-cta-primary {
@@ -569,7 +526,12 @@ a.btn-cta-primary, .btn-cta-primary {
     font-weight: bold;
 }
 
-footer > p {
+footer {
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+footer > p, #email {
 	font-weight: 500;
 	font-size: 1.5em;
 	text-align: center;
@@ -645,7 +607,7 @@ footer > p {
 			justify-content: center;
 		}
 
-		header .header-icons {
+  	header .header-icons {
 			justify-content: center;
 		}
 
