@@ -5,39 +5,76 @@
 	{% include head.html %}
 
 	<body>
-		{% include header.html %}
+    {% include nav.html %}
+    <main>
+		  {% include header.html %}
 
-    <div id="first">
-      <div id="picture">
-        <img src="{{ '/assets/headshot3.png' | relative_url }}" />
-      </div>
+      <section>
+        <div class="nami">
+          <h1>Nami</h1>
+          <div>
+            <p>Nami is an open-source, serverless framework for consuming webhooks at scale. </p>
+            <p>Built with Node.js, Docker, MongoDB, and AWS services, Nami accomodates bursty webhook traffic by using AWS Lambda functions to automatically scale compute resources. </p>
+            <!-- <p class="presentation"><a href="https://www.youtube.com/watch?v=YdY741v5Kk8&feature=youtu.be" target="_blank">Watch me present BAM!</a> at the PDX Node meetup.</p> -->
+            <a href="https://nami-serverless.github.io/" target="_blank">
+              <button class="button">
+                <p>Read More</p>
+              </button>
+            </a>
+          </div>
 
-      <div id="introduction">
-        <h2 id="greeting">Hi, I'm Nick</h2>
+          <div>
+            <img src="{{ '/assets/images/NamiDeploy.gif' | relative_url }}" alt="Nami" class="nami-deploy"/>
+          </div>
+        </div>
 
-        <p id="intro">I'm a software engineer in Los Angeles.
-          <br/>
-          <br/>
-          I'm a co-creator of <a href="https://nami-serverless.github.io/" target="_blank">Nami</a>, a serverless framework designed to consume webhooks at scale, built using Node.js and AWS services.
-          <br/>
-          <br/>
-          Let's <a id="email" href="mailto:hello@nickmiller.io">Connect</a>.
-          <!-- <a href="#background">More about me.</a> -->
-        </p>
+        <div id="more-about-me" class="more-about-me">
+          <div>
+            <h2>Other Projects</h2>
+            <ul>
+              <li>
+                <h3>Nello</h3>
+                <p>
+                  A Trello-like application built with <em>React/Redux</em> and <em>Ruby on Rails</em>
+                  that enables users to create, edit, and delete boards.
+                  Users can also create and modify lists and cards within boards.
+                </p>
+              </li>
+              <li>
+                <h3>Postit</h3>
+                <p>
+                  Reddit-like applications built using <em>Ruby on Rails</em> and <em>Javascript</em>.
+                  Allows users to create, update, and delete posts.
+                  Users can also create and login to their account, create comments, and vote on comments and posts.
+                </p>
+              </li>
+              <li>
+                <h3>Todo List</h3>
+                <p>
+                  <em>JavaScript</em> application providing users with a todolist featuring
+                  a comprehensive set of features, including sorting and filtering.
+                </p>
+              </li>
+
+            </ul>
+          </div>
+          <div>
+            <h2>More About Me</h2>
+            <p>I have several years experience with a variety of languages and
+            technologies, including <em>Node.js</em>, <em>Ruby</em>, <em>PostgreSQL</em>, <em>React/Redux</em>, and <em>Rails</em>.</p>
+            <p>I have spent a lot of time with <em>Amazon Web Services</em>, such as <em>Lambda, API
+              Gateway, SQS,</em> and <em>EC2</em>.</p>
+            <p>I have spent most of my adult life living and working in Japan, and can
+            can both speak and write Japanese fluently in business environments. I have
+            worked in a variety of industries from finance to beer, and I thrive in environments where I
+            have opportunities to contribute while learning new, interesting things.</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
 
-
-      </div>
-
-      <div id="scroll">
-        <small>scroll</small>
-        <div class="line"></div>
-      </div>
-
-    </div>
-
-    <section id="nami">
-			<!-- <h2 id="nami-title">Nami Framework</h2><img id="nami-logo" src="assets/nami_logo.png" /> -->
+    <!-- <section id="nami">
       <article>
         <div class="box">
           <div class="mobile">
@@ -63,7 +100,7 @@
           <img src="https://i.imgur.com/00Yy8JA.gif" />
         </div>
       </article>
-    </section>
+    </section> -->
 
 	</body>
 </html>
