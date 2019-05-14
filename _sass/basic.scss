@@ -57,6 +57,7 @@ nav {
   position: fixed;
   text-align: right;
   width: 100%;
+  z-index:2;
 }
 
 nav li {
@@ -144,7 +145,8 @@ section > div {
   padding-bottom: 50px;
 }
 
-.nami h1 {
+.nami h2 {
+  font-size: 1.7em;
   margin-bottom: 60px;
   text-align: center;
 }
@@ -214,6 +216,57 @@ section > div {
   clear: both;
   content: "";
   display: block;
+}
+
+/* ========================
+
+      Presentation
+
+   ======================== */
+
+
+.presentation {
+  background-color: #5262ff;
+  color: #fff;
+}
+
+.presentation-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.box h2 {
+  font-size: 1.7em;
+  margin-bottom: 60px;
+}
+
+.box {
+  flex: 1.5;
+}
+
+.youtubevideowrap {
+  flex: 2;
+  margin: 0 auto;
+  max-width: 640px;
+  padding-left: 100px;
+  width: 80%;
+}
+
+.video-container {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 /* ========================
@@ -288,6 +341,30 @@ section > div {
     clear: both;
     width: 100%;
   }
+
+  .box h2 {
+    text-align: center;
+  }
+
+  .presentation-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box {
+    flex: 1;
+  }
+
+  .youtubevideowrap {
+    flex: 3;
+    padding-left: 0;
+  }
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    max-width: 560px;
+  }
 }
 
 
@@ -343,6 +420,8 @@ section > div {
   nav li:last-of-type {
     padding-right: 0;
   }
+
+
 
   .more-about-me {
     padding-top: 50px;
